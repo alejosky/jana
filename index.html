@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruth Jana Braunsteffer</title>
+    <meta
+      name="description"
+      content="Gitarrenunterricht, Vita, Fotos und Kontakt von Ruth Jana Braunsteffer."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231d1a17'/%3E%3Cpath d='M24 12h8v22.7c0 6.2-4.1 10.3-10.2 10.3-2.5 0-4.5-.5-6.8-1.7l2.2-6.6c1 .5 2 .8 3.1.8 2.3 0 3.7-1.4 3.7-4.5V12Zm18 0h8v30h-8V12Z' fill='%23f5efe5'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <section class="hero" aria-label="Hero image placeholder">
+        <div class="hero__image"></div>
+      </section>
+
+      <main class="content-card">
+        <header class="topbar">
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-menu"
+            data-menu-toggle
+          >
+            <span class="menu-toggle__label" data-i18n="menuButton">Menue</span>
+            <span class="menu-toggle__icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+
+          <div
+            class="language-switcher"
+            role="group"
+            data-language-switcher
+          ></div>
+        </header>
+
+        <nav
+          class="site-menu"
+          id="site-menu"
+          aria-label="Primary"
+          data-menu
+          hidden
+        >
+          <ul class="site-menu__list" data-nav-list></ul>
+        </nav>
+
+        <section class="intro" aria-labelledby="site-title">
+          <p class="eyebrow" data-i18n="eyebrow">Gitarrenunterricht</p>
+          <h1 id="site-title" data-i18n="title">Ruth Jana Braunsteffer</h1>
+          <p class="intro__text" data-i18n="introText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel
+            ante eget nibh ultrices varius.
+          </p>
+        </section>
+
+        <footer class="footer">
+          <p class="footer__label" data-i18n="footerLabel">Verbinden</p>
+          <ul class="social-links" data-social-list></ul>
+        </footer>
+      </main>
+    </div>
+
+    <template id="nav-item-template">
+      <li class="site-menu__item">
+        <a class="site-menu__link" href="#"></a>
+      </li>
+    </template>
+
+    <template id="social-item-template">
+      <li>
+        <a
+          class="social-link"
+          href="#"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <span class="social-link__icon" aria-hidden="true"></span>
+          <span class="social-link__label"></span>
+        </a>
+      </li>
+    </template>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
