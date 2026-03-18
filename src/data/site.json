@@ -1,0 +1,82 @@
+{
+  "defaultLanguage": "de",
+  "supportedLanguages": ["de", "en"],
+  "languageLabels": {
+    "de": "DE",
+    "en": "EN"
+  },
+  "languages": {
+    "de": {
+      "meta": {
+        "title": "Ruth Jana Braunsteffer, MA",
+        "description": "Gitarrenunterricht, Biografie, Media, Inklusion und Kontakt von Ruth Jana Braunsteffer."
+      },
+      "menuButton": "Menue",
+      "languageSwitcherLabel": "Sprachauswahl",
+      "eyebrow": "",
+      "title": "Ruth Jana Braunsteffer, MA",
+      "introText": "Musik, die verbindet.",
+      "footerLabel": "",
+      "navigation": [
+        { "label": "Biografie", "href": "#biografie" },
+        { "label": "Media", "href": "#media" },
+        { "label": "Unterricht", "href": "#unterricht" },
+        { "label": "Inklusion", "href": "#inklusion" },
+        { "label": "Kontakt", "href": "#kontakt" }
+      ],
+      "social": [
+        {
+          "label": "Instagram",
+          "short": "IG",
+          "href": "https://example.com/instagram"
+        },
+        {
+          "label": "YouTube",
+          "short": "YT",
+          "href": "https://example.com/youtube"
+        },
+        {
+          "label": "SoundCloud",
+          "short": "SC",
+          "href": "https://example.com/soundcloud"
+        }
+      ]
+    },
+    "en": {
+      "meta": {
+        "title": "Ruth Jana Braunsteffer, MA",
+        "description": "Guitar lessons, biography, media, inclusion, and contact details for Ruth Jana Braunsteffer."
+      },
+      "menuButton": "Menu",
+      "languageSwitcherLabel": "Language switcher",
+      "eyebrow": "Guitar Lessons",
+      "title": "Ruth Jana Braunsteffer, MA",
+      "introText": "Music that connects.",
+      "footerLabel": "Connect",
+      "navigation": [
+        { "label": "Biography", "href": "#biografie" },
+        { "label": "Media", "href": "#media" },
+        { "label": "Lessons", "href": "#unterricht" },
+        { "label": "Inclusion", "href": "#inklusion" },
+        { "label": "Contact", "href": "#kontakt" }
+      ],
+      "social": [
+        {
+          "label": "Instagram",
+          "short": "IG",
+          "href": "https://example.com/instagram"
+        },
+        {
+          "label": "YouTube",
+          "short": "YT",
+          "href": "https://example.com/youtube"
+        },
+        {
+          "label": "SoundCloud",
+          "short": "SC",
+          "href": "https://example.com/soundcloud"
+        }
+      ]
+    }
+  }
+}

@@ -76,11 +76,13 @@ pnpm-debug.log*
 .next/
 .nuxt/
 .svelte-kit/
+out/
 dist/
 build/
 coverage/
 .parcel-cache/
 .vite/
+screenshots/
 
 # TypeScript
 *.tsbuildinfo
