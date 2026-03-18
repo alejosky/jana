@@ -8,15 +8,15 @@
   "languages": {
     "de": {
       "meta": {
-        "title": "Ruth Jana Braunsteffer",
+        "title": "Ruth Jana Braunsteffer, MA",
         "description": "Gitarrenunterricht, Biografie, Media, Inklusion und Kontakt von Ruth Jana Braunsteffer."
       },
       "menuButton": "Menue",
       "languageSwitcherLabel": "Sprachauswahl",
-      "eyebrow": "Gitarrenunterricht",
-      "title": "Ruth Jana Braunsteffer",
-      "introText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed dignissim velit. Integer ac nibh eu orci volutpat interdum quis eget est.",
-      "footerLabel": "Verbinden",
+      "eyebrow": "",
+      "title": "Ruth Jana Braunsteffer, MA",
+      "introText": "Musik, die verbindet.",
+      "footerLabel": "",
       "navigation": [
         { "label": "Biografie", "href": "#biografie" },
         { "label": "Media", "href": "#media" },
@@ -44,14 +44,14 @@
     },
     "en": {
       "meta": {
-        "title": "Ruth Jana Braunsteffer",
+        "title": "Ruth Jana Braunsteffer, MA",
         "description": "Guitar lessons, biography, media, inclusion, and contact details for Ruth Jana Braunsteffer."
       },
       "menuButton": "Menu",
       "languageSwitcherLabel": "Language switcher",
       "eyebrow": "Guitar Lessons",
-      "title": "Ruth Jana Braunsteffer",
-      "introText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed dignissim velit. Integer ac nibh eu orci volutpat interdum quis eget est.",
+      "title": "Ruth Jana Braunsteffer, MA",
+      "introText": "Music that connects.",
       "footerLabel": "Connect",
       "navigation": [
         { "label": "Biography", "href": "#biografie" },
