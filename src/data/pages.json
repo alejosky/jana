@@ -1,0 +1,197 @@
+{
+  "pages": [
+    {
+      "id": "biography",
+      "locales": {
+        "de": {
+          "slug": "biografie",
+          "title": "Biografie",
+          "description": "Biografische Inhalte, Stationen und künstlerische Schwerpunkte von Ruth Jana Braunsteffer.",
+          "body": "biografie.md",
+          "published": true,
+          "heroImage": {
+            "src": "/assets/jana_black_white.jpg",
+            "alt": "Ruth Jana Braunsteffer in Schwarz-Weiss.",
+            "width": 602,
+            "height": 896,
+            "caption": "Porträtmotiv für die Biografie-Seite."
+          }
+        },
+        "en": {
+          "slug": "biography",
+          "title": "Biography",
+          "description": "Biographical notes, artistic focus, and milestones for Ruth Jana Braunsteffer.",
+          "body": "biography.md",
+          "published": true,
+          "heroImage": {
+            "src": "/assets/jana_black_white.jpg",
+            "alt": "Ruth Jana Braunsteffer in black and white.",
+            "width": 602,
+            "height": 896,
+            "caption": "Portrait image for the biography page."
+          }
+        }
+      }
+    },
+    {
+      "id": "media",
+      "locales": {
+        "de": {
+          "slug": "media",
+          "title": "Media",
+          "description": "Bilder, Audio, Video und Pressematerial werden hier gesammelt und laufend erweitert.",
+          "body": "media.md",
+          "published": true,
+          "heroImage": {
+            "src": "/assets/jana_guitar.jpeg",
+            "alt": "Ruth Jana Braunsteffer mit Gitarre.",
+            "width": 640,
+            "height": 393,
+            "caption": "Visuelles Material für Konzert- und Pressekontexte."
+          },
+          "gallery": [
+            {
+              "src": "/assets/jana_studio.jpeg",
+              "alt": "Ruth Jana Braunsteffer im Studio.",
+              "width": 640,
+              "height": 360
+            },
+            {
+              "src": "/assets/jana_wall.jpg",
+              "alt": "Porträt von Ruth Jana Braunsteffer vor einer Wand.",
+              "width": 747,
+              "height": 500
+            }
+          ]
+        },
+        "en": {
+          "slug": "media",
+          "title": "Media",
+          "description": "Images, audio, video, and press assets will be collected here and expanded over time.",
+          "body": "media.md",
+          "published": true,
+          "heroImage": {
+            "src": "/assets/jana_guitar.jpeg",
+            "alt": "Ruth Jana Braunsteffer with guitar.",
+            "width": 640,
+            "height": 393,
+            "caption": "Media page visual for performances and press use."
+          },
+          "gallery": [
+            {
+              "src": "/assets/jana_studio.jpeg",
+              "alt": "Ruth Jana Braunsteffer in the studio.",
+              "width": 640,
+              "height": 360
+            },
+            {
+              "src": "/assets/jana_wall.jpg",
+              "alt": "Portrait of Ruth Jana Braunsteffer against a wall.",
+              "width": 747,
+              "height": 500
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "lessons",
+      "locales": {
+        "de": {
+          "slug": "unterricht",
+          "title": "Unterricht",
+          "description": "Informationen zu Unterrichtsformaten, Zielgruppen und zum pädagogischen Zugang.",
+          "body": "unterricht.md",
+          "published": true,
+          "heroImage": {
+            "src": "/assets/jana_piano.jpeg",
+            "alt": "Ruth Jana Braunsteffer in einem Unterrichts- oder Probensetting.",
+            "width": 427,
+            "height": 640,
+            "caption": "Motiv für die Unterrichtsseite."
+          }
+        },
+        "en": {
+          "slug": "lessons",
+          "title": "Lessons",
+          "description": "Information about teaching formats, audiences, and the pedagogical approach.",
+          "body": "lessons.md",
+          "published": true,
+          "heroImage": {
+            "src": "/assets/jana_piano.jpeg",
+            "alt": "Ruth Jana Braunsteffer in a rehearsal or teaching setting.",
+            "width": 427,
+            "height": 640,
+            "caption": "Visual for the lessons page."
+          }
+        }
+      }
+    },
+    {
+      "id": "inclusion",
+      "locales": {
+        "de": {
+          "slug": "inklusion",
+          "title": "Inklusion",
+          "description": "Projekte, Haltung und Formate rund um inklusive musikalische Arbeit.",
+          "body": "inklusion.md",
+          "published": true,
+          "heroImage": {
+            "src": "/assets/jana_flag.jpeg",
+            "alt": "Ruth Jana Braunsteffer in einer Performance-Situation.",
+            "width": 427,
+            "height": 640,
+            "caption": "Bild für inklusive Konzert- und Vermittlungsformate."
+          }
+        },
+        "en": {
+          "slug": "inclusion",
+          "title": "Inclusion",
+          "description": "Projects, values, and formats related to inclusive musical work.",
+          "body": "inclusion.md",
+          "published": true,
+          "heroImage": {
+            "src": "/assets/jana_flag.jpeg",
+            "alt": "Ruth Jana Braunsteffer in a performance setting.",
+            "width": 427,
+            "height": 640,
+            "caption": "Image for inclusive performance and facilitation work."
+          }
+        }
+      }
+    },
+    {
+      "id": "contact",
+      "locales": {
+        "de": {
+          "slug": "kontakt",
+          "title": "Kontakt",
+          "description": "Anfragen zu Konzerten, Unterricht und Kooperationen können hier gebündelt werden.",
+          "body": "kontakt.md",
+          "published": true,
+          "heroImage": {
+            "src": "/assets/jana_sofa.jpeg",
+            "alt": "Ruth Jana Braunsteffer als Porträtmotiv für Kontakt und Anfragen.",
+            "width": 480,
+            "height": 600,
+            "caption": "Motiv für Kontakt und Zusammenarbeit."
+          }
+        },
+        "en": {
+          "slug": "contact",
+          "title": "Contact",
+          "description": "Booking, teaching, and collaboration requests can be collected here.",
+          "body": "contact.md",
+          "published": true,
+          "heroImage": {
+            "src": "/assets/jana_sofa.jpeg",
+            "alt": "Portrait of Ruth Jana Braunsteffer for contact and booking inquiries.",
+            "width": 480,
+            "height": 600,
+            "caption": "Image for contact and collaboration inquiries."
+          }
+        }
+      }
+    }
+  ]
+}

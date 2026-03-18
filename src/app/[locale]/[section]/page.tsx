@@ -1,62 +1,13 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 import { SiteFooter } from "@/components/site-footer";
-import { isSupportedLocale, siteData, SUPPORTED_LOCALES } from "@/lib/site-data";
-import { SiteLanguageCode } from "@/types/site";
-
-type SectionCopy = {
-  title: string;
-  placeholder: string;
-};
-
-const SECTION_CONTENT: Record<SiteLanguageCode, Record<string, SectionCopy>> = {
-  de: {
-    biografie: {
-      title: "Biografie",
-      placeholder: "Platzhalterseite: Inhalt für den Bereich Biografie folgt in Kürze.",
-    },
-    media: {
-      title: "Media",
-      placeholder: "Platzhalterseite: Inhalt für den Bereich Media folgt in Kürze.",
-    },
-    unterricht: {
-      title: "Unterricht",
-      placeholder: "Platzhalterseite: Inhalt für den Bereich Unterricht folgt in Kürze.",
-    },
-    inklusion: {
-      title: "Inklusion",
-      placeholder: "Platzhalterseite: Inhalt für den Bereich Inklusion folgt in Kürze.",
-    },
-    kontakt: {
-      title: "Kontakt",
-      placeholder: "Platzhalterseite: Inhalt für den Bereich Kontakt folgt in Kürze.",
-    },
-  },
-  en: {
-    biography: {
-      title: "Biography",
-      placeholder: "Placeholder page: Content for Biography will be added soon.",
-    },
-    media: {
-      title: "Media",
-      placeholder: "Placeholder page: Content for Media will be added soon.",
-    },
-    lessons: {
-      title: "Lessons",
-      placeholder: "Placeholder page: Content for Lessons will be added soon.",
-    },
-    inclusion: {
-      title: "Inclusion",
-      placeholder: "Placeholder page: Content for Inclusion will be added soon.",
-    },
-    contact: {
-      title: "Contact",
-      placeholder: "Placeholder page: Content for Contact will be added soon.",
-    },
-  },
-};
+import { getAllSectionParams, getResolvedPage } from "@/lib/page-data";
+import { getLocaleOpenGraph, isSupportedLocale, siteData } from "@/lib/site-data";
 
 type PageParams = {
   locale: string;
@@ -68,9 +19,7 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return SUPPORTED_LOCALES.flatMap((locale) =>
-    Object.keys(SECTION_CONTENT[locale]).map((section) => ({ locale, section })),
-  );
+  return getAllSectionParams();
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -80,15 +29,35 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {};
   }
 
-  const sectionCopy = SECTION_CONTENT[locale][section];
+  const page = await getResolvedPage(locale, section);
 
-  if (!sectionCopy) {
+  if (!page) {
     return {};
   }
 
   return {
-    title: `${sectionCopy.title} | ${siteData.languages[locale].meta.title}`,
-    description: sectionCopy.placeholder,
+    title: `${page.title} | ${siteData.languages[locale].meta.title}`,
+    description: page.description,
+    alternates: {
+      canonical: `/${locale}/${page.slug}`,
+      languages: page.alternates,
+    },
+    openGraph: {
+      type: "article",
+      title: page.title,
+      description: page.description,
+      locale: getLocaleOpenGraph(locale),
+      images: page.heroImage
+        ? [
+          {
+            url: page.heroImage.src,
+            width: page.heroImage.width,
+            height: page.heroImage.height,
+            alt: page.heroImage.alt,
+          },
+        ]
+        : undefined,
+    },
   };
 }
 
@@ -99,23 +68,93 @@ export default async function SectionPage({ params }: PageProps) {
     notFound();
   }
 
-  const sectionCopy = SECTION_CONTENT[locale][section];
+  const page = await getResolvedPage(locale, section);
 
-  if (!sectionCopy) {
+  if (!page) {
     notFound();
   }
 
   return (
     <main className="content-card">
-      <section className="intro" aria-labelledby="section-title">
-        <header className="topbar intro-topbar">
-          <h1 id="section-title">{sectionCopy.title}</h1>
+      <article className="content-page" aria-labelledby="section-title">
+        <header className="topbar intro-topbar content-page__header">
+          <h1 id="section-title">{page.title}</h1>
         </header>
-        <p className="intro__text">{sectionCopy.placeholder}</p>
-        <p>
+        <p className="content-page__summary">{page.description}</p>
+
+        {page.heroImage ? (
+          <figure className="content-page__hero">
+            <Image
+              src={page.heroImage.src}
+              alt={page.heroImage.alt}
+              width={page.heroImage.width}
+              height={page.heroImage.height}
+              className="content-page__hero-image"
+            />
+            {page.heroImage.caption ? (
+              <figcaption className="content-page__caption">{page.heroImage.caption}</figcaption>
+            ) : null}
+          </figure>
+        ) : null}
+
+        <div className="markdown-content">
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{page.bodyContent}</ReactMarkdown>
+        </div>
+
+        {page.gallery?.length ? (
+          <section className="content-page__gallery" aria-label={locale === "de" ? "Galerie" : "Gallery"}>
+            {page.gallery.map((image) => (
+              <figure key={image.src} className="content-page__gallery-item">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={image.width}
+                  height={image.height}
+                  className="content-page__gallery-image"
+                />
+                {image.caption ? (
+                  <figcaption className="content-page__caption">{image.caption}</figcaption>
+                ) : null}
+              </figure>
+            ))}
+          </section>
+        ) : null}
+
+        {page.embeds?.length ? (
+          <section className="content-page__embeds" aria-label={locale === "de" ? "Eingebettete Medien" : "Embedded media"}>
+            {page.embeds.map((embed) => (
+              <div className="content-page__embed" key={embed.src}>
+                <iframe
+                  src={embed.src}
+                  title={embed.title}
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+            ))}
+          </section>
+        ) : null}
+
+        {page.downloads?.length ? (
+          <section className="content-page__downloads" aria-label={locale === "de" ? "Downloads" : "Downloads"}>
+            <h2>{locale === "de" ? "Downloads" : "Downloads"}</h2>
+            <ul className="content-page__download-list">
+              {page.downloads.map((download) => (
+                <li key={download.href}>
+                  <a href={download.href}>{download.label}</a>
+                  {download.description ? <span>{` — ${download.description}`}</span> : null}
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
+        <p className="content-page__backlink">
           <Link href={`/${locale}`}>{locale === "de" ? "Zurück zur Startseite" : "Back to home"}</Link>
         </p>
-      </section>
+      </article>
       <SiteFooter socialItems={siteData.languages[locale].social} />
     </main>
   );
