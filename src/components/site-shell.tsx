@@ -141,16 +141,16 @@ export function SiteShell({ locale, siteData }: SiteShellProps) {
 
   return (
     <>
-      <Image
-        src="/assets/logo.png"
-        alt="Logo"
-        className="fixed-logo"
-        width={360}
-        height={360}
-        priority
-      />
       <div className="page-shell">
         <section className="hero" aria-label="Hero image placeholder">
+          <Image
+            src="/assets/logo.png"
+            alt="Logo"
+            className="fixed-logo"
+            width={192}
+            height={192}
+            priority
+          />
           <div className="hero__image" />
         </section>
 
@@ -212,7 +212,6 @@ export function SiteShell({ locale, siteData }: SiteShellProps) {
 
           <section className="intro" aria-labelledby="site-title">
             <header className="topbar intro-topbar">
-              <p className="eyebrow">{languageData.eyebrow}</p>
               <h1 id="site-title">{languageData.title}</h1>
             </header>
 
@@ -220,7 +219,6 @@ export function SiteShell({ locale, siteData }: SiteShellProps) {
           </section>
 
           <footer className="footer">
-            <p className="footer__label">{languageData.footerLabel}</p>
             <ul className="social-links">
               {languageData.social.map((item) => (
                 <li key={`${locale}-${item.label}`}>

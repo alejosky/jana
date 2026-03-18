@@ -20,14 +20,14 @@ Production-ready website migration for Ruth Jana Braunsteffer.
 ## Development
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 ## Build Static Site
 
 ```bash
-npm run build
+pnpm build
 ```
 
 Static output is generated in `out/`.

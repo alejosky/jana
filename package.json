@@ -2,6 +2,7 @@
   "name": "jana",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@10.18.3",
   "description": "Professional static-generated website for Ruth Jana Braunsteffer.",
   "scripts": {
     "dev": "next dev",

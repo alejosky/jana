@@ -13,10 +13,8 @@
       },
       "menuButton": "Menue",
       "languageSwitcherLabel": "Sprachauswahl",
-      "eyebrow": "",
       "title": "Ruth Jana Braunsteffer, MA",
       "introText": "Musik, die verbindet.",
-      "footerLabel": "",
       "navigation": [
         { "label": "Biografie", "href": "#biografie" },
         { "label": "Media", "href": "#media" },
@@ -49,10 +47,8 @@
       },
       "menuButton": "Menu",
       "languageSwitcherLabel": "Language switcher",
-      "eyebrow": "Guitar Lessons",
       "title": "Ruth Jana Braunsteffer, MA",
       "introText": "Music that connects.",
-      "footerLabel": "Connect",
       "navigation": [
         { "label": "Biography", "href": "#biografie" },
         { "label": "Media", "href": "#media" },

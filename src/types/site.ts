@@ -20,10 +20,8 @@ export type SiteLanguageContent = {
   meta: SiteMeta;
   menuButton: string;
   languageSwitcherLabel: string;
-  eyebrow: string;
   title: string;
   introText: string;
-  footerLabel: string;
   navigation: SiteNavItem[];
   social: SiteSocialItem[];
 };
