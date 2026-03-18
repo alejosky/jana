@@ -84,7 +84,7 @@ button {
   z-index: 0;
   background-image:
     linear-gradient(180deg, rgba(20, 16, 12, 0.12), rgba(20, 16, 12, 0.54)),
-    url("https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1600&h=2200&q=80");
+    url("./assets/jana_guitar_bw.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -303,7 +303,7 @@ h1 {
   color: var(--accent);
   font-size: 0.9rem;
   font-weight: 700;
-} 
+}
 
 body.menu-open {
   overflow: hidden;
