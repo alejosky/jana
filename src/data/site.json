@@ -16,11 +16,11 @@
       "title": "Ruth Jana Braunsteffer, MA",
       "introText": "Musik, die verbindet.",
       "navigation": [
-        { "label": "Biografie", "href": "#biografie" },
-        { "label": "Media", "href": "#media" },
-        { "label": "Unterricht", "href": "#unterricht" },
-        { "label": "Inklusion", "href": "#inklusion" },
-        { "label": "Kontakt", "href": "#kontakt" }
+        { "label": "Biografie", "href": "biografie" },
+        { "label": "Media", "href": "media" },
+        { "label": "Unterricht", "href": "unterricht" },
+        { "label": "Inklusion", "href": "inklusion" },
+        { "label": "Kontakt", "href": "kontakt" }
       ],
       "social": [
         {
@@ -50,11 +50,11 @@
       "title": "Ruth Jana Braunsteffer, MA",
       "introText": "Music that connects.",
       "navigation": [
-        { "label": "Biography", "href": "#biografie" },
-        { "label": "Media", "href": "#media" },
-        { "label": "Lessons", "href": "#unterricht" },
-        { "label": "Inclusion", "href": "#inklusion" },
-        { "label": "Contact", "href": "#kontakt" }
+        { "label": "Biography", "href": "biography" },
+        { "label": "Media", "href": "media" },
+        { "label": "Lessons", "href": "lessons" },
+        { "label": "Inclusion", "href": "inclusion" },
+        { "label": "Contact", "href": "contact" }
       ],
       "social": [
         {
