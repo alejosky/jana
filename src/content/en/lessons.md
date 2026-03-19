@@ -1,9 +1,14 @@
 # Lessons
 
-The lessons page can now hold more detailed information about formats, audiences, and focus areas. Markdown works well here for longer sections, lists, and useful links.
+Ruth Jana Braunsteffer teaches guitar at the Musikschule Feldkirch. If you are interested in
+beginner or advanced lessons, please contact the music school directly.
 
-## Planned for this page
+[musikschule@feldkirch.at](mailto:musikschule@feldkirch.at)
 
-- individual and group formats
-- musical and pedagogical focus areas
-- process, location, and inquiry details
+Students of Stella Vorarlberg - Private University of Music have the opportunity to complete their
+teaching practice subject with Ruth Jana.
+
+More information at [www.stella-musikhochschule.ac.at](https://www.stella-musikhochschule.ac.at)
+
+At the Kathi-Lampert-Schule in Götzis, Ruth Jana teaches guitar at the College for Social
+Pedagogy. More information at [www.kathi-lampert-schule.at](https://www.kathi-lampert-schule.at)
