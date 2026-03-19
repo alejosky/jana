@@ -78,13 +78,15 @@ export default async function SectionPage({ params }: PageProps) {
   return (
     <main className="main-content">
       <div className="content-page__menu-wrap">
-        <Image
-          src="/assets/logo.png"
-          alt="Logo"
-          className="content-page__menu-logo"
-          width={144}
-          height={144}
-        />
+        <Link href={`/${locale}`} aria-label={locale === "de" ? "Zurück zur Startseite" : "Back to home"}>
+          <Image
+            src="/assets/logo.png"
+            alt="Logo"
+            className="content-page__menu-logo"
+            width={144}
+            height={144}
+          />
+        </Link>
         <SiteMenu locale={locale} siteData={siteData} />
       </div>
       <article className="content-page" aria-labelledby="section-title">
