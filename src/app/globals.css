@@ -82,7 +82,7 @@ button {
   background-position: center center;
 }
 
-.content-card {
+.main-content {
   position: relative;
   z-index: 1;
   width: 100%;
@@ -243,6 +243,25 @@ h1 {
   width: min(100%, 72rem);
   margin-inline: auto;
   padding-top: 32px;
+}
+
+.content-page__menu-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: min(100%, 72rem);
+  margin-inline: auto;
+  flex-wrap: nowrap;
+}
+
+.content-page__menu-wrap .site-menu {
+  flex: 1;
+}
+
+.content-page__menu-logo {
+  width: 60px;
+  height: auto;
+  flex: 0 0 auto;
 }
 
 .content-page__header {
@@ -432,7 +451,7 @@ body.menu-open {
     min-height: 42rem;
   }
 
-  .content-card {
+  .main-content {
     padding: 32px 36px 40px;
   }
 
@@ -487,6 +506,14 @@ body.menu-open {
 
   .content-page {
     padding-top: 48px;
+  }
+
+  .content-page__menu-wrap {
+    gap: 24px;
+  }
+
+  .content-page__menu-logo {
+    width: 60px;
   }
 
   .content-page__gallery {

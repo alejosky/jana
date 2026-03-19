@@ -76,8 +76,17 @@ export default async function SectionPage({ params }: PageProps) {
   }
 
   return (
-    <main className="content-card">
-      <SiteMenu locale={locale} siteData={siteData} />
+    <main className="main-content">
+      <div className="content-page__menu-wrap">
+        <Image
+          src="/assets/logo.png"
+          alt="Logo"
+          className="content-page__menu-logo"
+          width={144}
+          height={144}
+        />
+        <SiteMenu locale={locale} siteData={siteData} />
+      </div>
       <article className="content-page" aria-labelledby="section-title">
         <header className="topbar intro-topbar content-page__header">
           <h1 id="section-title">{page.title}</h1>

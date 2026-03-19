@@ -29,7 +29,7 @@ export function SiteShell({ locale, siteData }: SiteShellProps) {
           <div className="hero__image" />
         </section>
 
-        <main className="content-card">
+        <main className="main-content">
           <SiteMenu locale={locale} siteData={siteData} />
 
           <section className="intro" aria-labelledby="site-title">
