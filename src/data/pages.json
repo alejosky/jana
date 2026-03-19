@@ -145,7 +145,7 @@
         "de": {
           "slug": "inklusion",
           "title": "Inklusion",
-          "description": "Projekte, Haltung und Formate rund um inklusive musikalische Arbeit.",
+          "description": "Haltung und Formate rund um inklusive musikalische Arbeit.",
           "body": "inklusion.md",
           "published": true,
           "heroImage": {
@@ -159,7 +159,7 @@
         "en": {
           "slug": "inclusion",
           "title": "Inclusion",
-          "description": "Projects, values, and formats related to inclusive musical work.",
+          "description": "Values and formats related to inclusive musical work.",
           "body": "inclusion.md",
           "published": true,
           "heroImage": {

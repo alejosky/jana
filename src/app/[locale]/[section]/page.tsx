@@ -104,9 +104,7 @@ export default async function SectionPage({ params }: PageProps) {
               height={page.heroImage.height}
               className="content-page__hero-image"
             />
-            {page.heroImage.caption ? (
-              <figcaption className="content-page__caption">{page.heroImage.caption}</figcaption>
-            ) : null}
+
           </figure>
         ) : null}
 
@@ -125,9 +123,7 @@ export default async function SectionPage({ params }: PageProps) {
                   height={image.height}
                   className="content-page__gallery-image"
                 />
-                {image.caption ? (
-                  <figcaption className="content-page__caption">{image.caption}</figcaption>
-                ) : null}
+
               </figure>
             ))}
           </section>

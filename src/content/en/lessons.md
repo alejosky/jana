@@ -11,4 +11,6 @@ teaching practice subject with Ruth Jana.
 More information at [www.stella-musikhochschule.ac.at](https://www.stella-musikhochschule.ac.at)
 
 At the Kathi-Lampert-Schule in Götzis, Ruth Jana teaches guitar at the College for Social
-Pedagogy. More information at [www.kathi-lampert-schule.at](https://www.kathi-lampert-schule.at)
+Pedagogy.
+
+More information at [www.kathi-lampert-schule.at](https://www.kathi-lampert-schule.at)

@@ -26,17 +26,12 @@
         {
           "label": "Instagram",
           "short": "IG",
-          "href": "https://example.com/instagram"
+          "href": "https://www.instagram.com/ruthjana.braunsteffer"
         },
         {
-          "label": "YouTube",
-          "short": "YT",
-          "href": "https://example.com/youtube"
-        },
-        {
-          "label": "SoundCloud",
-          "short": "SC",
-          "href": "https://example.com/soundcloud"
+          "label": "Facebook",
+          "short": "FB",
+          "href": "https://www.facebook.com/profile.php?id=100002102951322"
         }
       ]
     },
@@ -60,17 +55,12 @@
         {
           "label": "Instagram",
           "short": "IG",
-          "href": "https://example.com/instagram"
+          "href": "https://www.instagram.com/ruthjana.braunsteffer"
         },
         {
-          "label": "YouTube",
-          "short": "YT",
-          "href": "https://example.com/youtube"
-        },
-        {
-          "label": "SoundCloud",
-          "short": "SC",
-          "href": "https://example.com/soundcloud"
+          "label": "Facebook",
+          "short": "FB",
+          "href": "https://www.facebook.com/profile.php?id=100002102951322"
         }
       ]
     }

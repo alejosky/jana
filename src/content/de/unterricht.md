@@ -11,4 +11,6 @@ Jana das Fach Lehrpraxis zu absolvieren.
 Informationen unter [www.stella-musikhochschule.ac.at](https://www.stella-musikhochschule.ac.at)
 
 An der Kathi-Lampert-Schule Götzis unterrichtet Ruth Jana Gitarre am Kolleg für
-Sozialpädagogik. Informationen unter [www.kathi-lampert-schule.at](https://www.kathi-lampert-schule.at)
+Sozialpädagogik.
+
+Informationen unter [www.kathi-lampert-schule.at](https://www.kathi-lampert-schule.at)
