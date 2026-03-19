@@ -91,7 +91,7 @@ export function SiteMenu({ locale, siteData }: SiteMenuProps) {
         </span>
       </button>
 
-      <ul id="site-menu-list" className="site-menu__list">
+      <ul id="site-menu-list" className="site-menu__list" onClick={() => setMenuOpen(false)}>
         {languageData.navigation.map((item) => (
           <li className="site-menu__item" key={`${locale}-${item.label}`}>
             <Link
