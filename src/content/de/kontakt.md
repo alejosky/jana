@@ -1,9 +1,12 @@
 # Kontakt
 
-Diese Seite bündelt künftig Informationen für Konzertanfragen, Unterricht und Kooperationen. Kontaktdaten, Hinweise zum Ablauf und organisatorische Informationen können direkt hier gepflegt werden.
 
-## Geplant für diese Seite
+Ruth Jana Braunsteffer
 
-- Kontaktmöglichkeiten
-- Hinweise für Buchungsanfragen
-- Informationen für Kooperationen
+Buchwald 1
+
+A- 6835 Zwischenwasser
+
+[ruthjana.braunsteffer@gmail.com](mailto:ruthjana.braunsteffer@gmail.com)
+
+[0043-650 4242666](tel:+436504242666)

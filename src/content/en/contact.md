@@ -1,9 +1,12 @@
 # Contact
 
-This page will collect information for bookings, lessons, and collaborations. Contact details, process notes, and practical information can be maintained here directly.
 
-## Planned for this page
+Ruth Jana Braunsteffer
 
-- contact options
-- booking inquiry guidance
-- collaboration information
+Buchwald 1
+
+A- 6835 Zwischenwasser
+
+[ruthjana.braunsteffer@gmail.com](mailto:ruthjana.braunsteffer@gmail.com)
+
+[0043-650 4242666](tel:+436504242666)
