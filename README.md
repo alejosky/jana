@@ -32,14 +32,27 @@ pnpm build
 
 Static output is generated in `out/`.
 
-## Deploy via GitHub Actions (SSH)
+For a local GitHub Pages-compatible build, use:
 
-Configure repository secrets:
+```bash
+GITHUB_PAGES=true pnpm build
+```
 
-- `SSH_PRIVATE_KEY`: private key for server access
-- `SSH_HOST`: host from your SSH config (`jana` target host)
-- `SSH_USER`: remote user
-- `SSH_PORT`: remote SSH port (usually `22`)
-- `DEPLOY_PATH`: remote directory to publish static files
+## Deploy
 
-Deployment runs automatically on push to `main` via `.github/workflows/deploy.yml`.
+Both deploy workflows trigger automatically when a version tag is pushed:
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+### GitHub Pages
+
+The site publishes to <https://alejosky.github.io/jana> via `.github/workflows/pages.yml` using the built-in `actions/deploy-pages` action. No repository secrets are required.
+
+Enable GitHub Pages in the repository settings under **Settings → Pages → Source → GitHub Actions** before the first deploy.
+
+### SSH Server
+
+The workflow `.github/workflows/deploy.yml` deploys the static export to a private server over SSH.

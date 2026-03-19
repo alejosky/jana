@@ -1,12 +1,21 @@
-name: Deploy
+name: Deploy to GitHub Pages
 
 on:
   push:
     tags:
       - "v*"
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -26,15 +35,19 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build static export
+        env:
+          GITHUB_PAGES: "true"
         run: pnpm build
 
-      - name: Deploy static files over SSH
-        uses: easingthemes/ssh-deploy@main
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDzvc --delete"
-          SOURCE: "out/"
-          REMOTE_HOST: ${{ secrets.SSH_HOST }}
-          REMOTE_USER: ${{ secrets.SSH_USER }}
-          REMOTE_PORT: "22"
-          TARGET: ${{ secrets.DEPLOY_PATH }}
+          path: out/
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
