@@ -12,3 +12,5 @@ Teachers who teach inclusively perceive and appreciate the diversity and differe
 students, and adapt their individual or group lessons to the needs of each learner.
 
 _Ruth Jana Braunsteffer MA, February 2024_
+
+Ruth Jana is the contact person for IGMI (Interessensgemeinschaft Musik Inklusiv Österreich), an interest group that advocates for the promotion of inclusion in music education. Information at www.igmi.at

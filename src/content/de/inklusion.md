@@ -13,3 +13,5 @@ wertschätzen diese und passen ihren Einzel- oder Gruppenunterricht an die Bedü
 Lernenden an.
 
 _Ruth Jana Braunsteffer MA, Februar 2024_
+
+Ruth Jana ist Ansprechpartnerin der IGMI Interessensgemeinschaft Musik Inklusiv Österreich, die sich für die Förderung der Inklusion in der Musikpädagogik einsetzt. Informationen unter www.igmi.at
