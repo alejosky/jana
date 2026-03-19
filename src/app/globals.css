@@ -385,6 +385,12 @@ h1 {
   border-top: 1px solid var(--line);
 }
 
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .social-links {
   display: flex;
   flex-wrap: wrap;
@@ -424,6 +430,22 @@ h1 {
   color: var(--accent);
   font-size: 0.9rem;
   font-weight: 700;
+}
+
+.imprint-link {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 0.875rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 120ms ease, transform 120ms ease;
+}
+
+.imprint-link:hover,
+.imprint-link:focus-visible {
+  outline: none;
+  color: var(--text);
+  transform: translateY(-1px);
 }
 
 body.menu-open {
@@ -531,6 +553,10 @@ body.menu-open {
   }
 
   .footer {
+    display: block;
+  }
+
+  .footer__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -539,7 +565,10 @@ body.menu-open {
 
   .social-links {
     margin-top: 0;
-    justify-content: flex-end;
+  }
+
+  .imprint-link {
+    margin-top: 0;
   }
 }
 

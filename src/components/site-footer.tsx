@@ -1,7 +1,8 @@
-import { SiteSocialItem } from "@/types/site";
+import { SiteNavItem, SiteSocialItem } from "@/types/site";
 
 type SiteFooterProps = {
   socialItems: SiteSocialItem[];
+  imprint?: SiteNavItem;
 };
 
 function SocialIcon({ label }: { label: string }) {
@@ -77,26 +78,33 @@ function SocialIcon({ label }: { label: string }) {
   );
 }
 
-export function SiteFooter({ socialItems }: SiteFooterProps) {
+export function SiteFooter({ socialItems, imprint }: SiteFooterProps) {
   return (
     <footer className="footer">
-      <ul className="social-links">
-        {socialItems.map((item) => (
-          <li key={`${item.label}-${item.href}`}>
-            <a
-              className="social-link"
-              href={item.href}
-              target="_blank"
-              rel="noreferrer noopener"
-              aria-label={item.label}
-            >
-              <span className="social-link__icon" aria-hidden="true">
-                <SocialIcon label={item.label} />
-              </span>
-            </a>
-          </li>
-        ))}
-      </ul>
+      <div className="footer__content">
+        <ul className="social-links">
+          {socialItems.map((item) => (
+            <li key={`${item.label}-${item.href}`}>
+              <a
+                className="social-link"
+                href={item.href}
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label={item.label}
+              >
+                <span className="social-link__icon" aria-hidden="true">
+                  <SocialIcon label={item.label} />
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        {imprint && (
+          <a href={imprint.href} className="imprint-link">
+            {imprint.label}
+          </a>
+        )}
+      </div>
     </footer>
   );
 }

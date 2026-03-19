@@ -204,6 +204,25 @@
           }
         }
       }
+    },
+    {
+      "id": "imprint",
+      "locales": {
+        "de": {
+          "slug": "impressum",
+          "title": "Impressum",
+          "description": "Rechtliche Angaben und Kontaktinformationen.",
+          "body": "impressum.md",
+          "published": true
+        },
+        "en": {
+          "slug": "imprint",
+          "title": "Imprint",
+          "description": "Legal details and contact information.",
+          "body": "imprint.md",
+          "published": true
+        }
+      }
     }
   ]
 }

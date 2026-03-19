@@ -24,6 +24,7 @@ export type SiteLanguageContent = {
   introText: string;
   navigation: SiteNavItem[];
   social: SiteSocialItem[];
+  imprint?: SiteNavItem;
 };
 
 export type SiteData = {

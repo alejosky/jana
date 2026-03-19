@@ -164,7 +164,7 @@ export default async function SectionPage({ params }: PageProps) {
           <Link href={`/${locale}`}>{locale === "de" ? "Zurück zur Startseite" : "Back to home"}</Link>
         </p>
       </article>
-      <SiteFooter socialItems={siteData.languages[locale].social} />
+      <SiteFooter socialItems={siteData.languages[locale].social} imprint={siteData.languages[locale].imprint} />
     </main>
   );
 }
