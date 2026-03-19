@@ -10,7 +10,7 @@
           "body": "biografie.md",
           "published": true,
           "heroImage": {
-            "src": "/assets/jana_black_white.jpg",
+            "src": "/assets/jana_guitar.jpeg",
             "alt": "Ruth Jana Braunsteffer in Schwarz-Weiss.",
             "width": 602,
             "height": 896,
@@ -24,7 +24,7 @@
           "body": "biography.md",
           "published": true,
           "heroImage": {
-            "src": "/assets/jana_black_white.jpg",
+            "src": "/assets/jana_guitar.jpeg",
             "alt": "Ruth Jana Braunsteffer in black and white.",
             "width": 602,
             "height": 896,
@@ -43,7 +43,7 @@
           "body": "media.md",
           "published": true,
           "heroImage": {
-            "src": "/assets/jana_guitar.jpeg",
+            "src": "/assets/jana_studio.jpeg",
             "alt": "Ruth Jana Braunsteffer mit Gitarre.",
             "width": 640,
             "height": 393,
@@ -71,7 +71,7 @@
           "body": "media.md",
           "published": true,
           "heroImage": {
-            "src": "/assets/jana_guitar.jpeg",
+            "src": "/assets/jana_studio.jpeg",
             "alt": "Ruth Jana Braunsteffer with guitar.",
             "width": 640,
             "height": 393,
@@ -104,7 +104,7 @@
           "body": "unterricht.md",
           "published": true,
           "heroImage": {
-            "src": "/assets/jana_piano.jpeg",
+            "src": "/assets/jana_wood.PNG",
             "alt": "Ruth Jana Braunsteffer in einem Unterrichts- oder Probensetting.",
             "width": 427,
             "height": 640,
@@ -118,7 +118,7 @@
           "body": "lessons.md",
           "published": true,
           "heroImage": {
-            "src": "/assets/jana_piano.jpeg",
+            "src": "/assets/jana_wood.PNG",
             "alt": "Ruth Jana Braunsteffer in a rehearsal or teaching setting.",
             "width": 427,
             "height": 640,
@@ -137,7 +137,7 @@
           "body": "inklusion.md",
           "published": true,
           "heroImage": {
-            "src": "/assets/jana_flag.jpeg",
+            "src": "/assets/jana_kiss.jpeg",
             "alt": "Ruth Jana Braunsteffer in einer Performance-Situation.",
             "width": 427,
             "height": 640,
@@ -151,7 +151,7 @@
           "body": "inclusion.md",
           "published": true,
           "heroImage": {
-            "src": "/assets/jana_flag.jpeg",
+            "src": "/assets/jana_kiss.jpeg",
             "alt": "Ruth Jana Braunsteffer in a performance setting.",
             "width": 427,
             "height": 640,
@@ -170,7 +170,7 @@
           "body": "kontakt.md",
           "published": true,
           "heroImage": {
-            "src": "/assets/jana_sofa.jpeg",
+            "src": "/assets/jana_piano.jpeg",
             "alt": "Ruth Jana Braunsteffer als Porträtmotiv für Kontakt und Anfragen.",
             "width": 480,
             "height": 600,
@@ -184,7 +184,7 @@
           "body": "contact.md",
           "published": true,
           "heroImage": {
-            "src": "/assets/jana_sofa.jpeg",
+            "src": "/assets/jana_piano.jpeg",
             "alt": "Portrait of Ruth Jana Braunsteffer for contact and booking inquiries.",
             "width": 480,
             "height": 600,

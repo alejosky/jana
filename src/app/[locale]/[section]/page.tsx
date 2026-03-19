@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 import { SiteFooter } from "@/components/site-footer";
+import { SiteMenu } from "@/components/site-menu";
 import { getAllSectionParams, getResolvedPage } from "@/lib/page-data";
 import { getLocaleOpenGraph, isSupportedLocale, siteData } from "@/lib/site-data";
 
@@ -76,6 +77,7 @@ export default async function SectionPage({ params }: PageProps) {
 
   return (
     <main className="content-card">
+      <SiteMenu locale={locale} siteData={siteData} />
       <article className="content-page" aria-labelledby="section-title">
         <header className="topbar intro-topbar content-page__header">
           <h1 id="section-title">{page.title}</h1>
