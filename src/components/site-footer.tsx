@@ -1,6 +1,9 @@
-import { SiteNavItem, SiteSocialItem } from "@/types/site";
+import Link from "next/link";
+
+import { SiteLanguageCode, SiteNavItem, SiteSocialItem } from "@/types/site";
 
 type SiteFooterProps = {
+  locale: SiteLanguageCode;
   socialItems: SiteSocialItem[];
   imprint?: SiteNavItem;
 };
@@ -78,7 +81,7 @@ function SocialIcon({ label }: { label: string }) {
   );
 }
 
-export function SiteFooter({ socialItems, imprint }: SiteFooterProps) {
+export function SiteFooter({ locale, socialItems, imprint }: SiteFooterProps) {
   return (
     <footer className="footer">
       <div className="footer__content">
@@ -100,9 +103,9 @@ export function SiteFooter({ socialItems, imprint }: SiteFooterProps) {
           ))}
         </ul>
         {imprint && (
-          <a href={imprint.href} className="imprint-link">
+          <Link href={`/${locale}/${imprint.href}`} className="imprint-link">
             {imprint.label}
-          </a>
+          </Link>
         )}
       </div>
     </footer>

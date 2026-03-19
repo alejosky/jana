@@ -20,7 +20,8 @@
         { "label": "Media", "href": "media" },
         { "label": "Unterricht", "href": "unterricht" },
         { "label": "Inklusion", "href": "inklusion" },
-        { "label": "Kontakt", "href": "kontakt" }
+        { "label": "Kontakt", "href": "kontakt" },
+        { "label": "Impressum", "href": "impressum" }
       ],
       "social": [
         {
@@ -53,7 +54,8 @@
         { "label": "Media", "href": "media" },
         { "label": "Lessons", "href": "lessons" },
         { "label": "Inclusion", "href": "inclusion" },
-        { "label": "Contact", "href": "contact" }
+        { "label": "Contact", "href": "contact" },
+        { "label": "Imprint", "href": "imprint" }
       ],
       "social": [
         {

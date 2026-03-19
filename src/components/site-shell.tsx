@@ -40,7 +40,7 @@ export function SiteShell({ locale, siteData }: SiteShellProps) {
             <p className="intro__text">{languageData.introText}</p>
           </section>
 
-          <SiteFooter socialItems={languageData.social} imprint={languageData.imprint} />
+          <SiteFooter locale={locale} socialItems={languageData.social} imprint={languageData.imprint} />
         </main>
       </div>
     </>
