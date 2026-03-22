@@ -12,6 +12,7 @@
         "description": "Gitarrenunterricht, Biografie, Media, Inklusion und Kontakt von Ruth Jana Braunsteffer."
       },
       "menuButton": "Menü",
+      "menuCloseButton": "Menü schließen",
       "languageSwitcherLabel": "Sprachauswahl",
       "title": "Ruth Jana Braunsteffer, MA",
       "introText": "Musik, die verbindet.",
@@ -46,6 +47,7 @@
         "description": "Guitar lessons, biography, media, inclusion, and contact details for Ruth Jana Braunsteffer."
       },
       "menuButton": "Menu",
+      "menuCloseButton": "Close menu",
       "languageSwitcherLabel": "Language switcher",
       "title": "Ruth Jana Braunsteffer, MA",
       "introText": "Music that connects.",

@@ -140,6 +140,17 @@ button {
   transform: translateY(-4px) rotate(-45deg);
 }
 
+.menu-close {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: large;
+  font-weight: normal;
+  border: 0;
+  margin-top: 1rem;
+  margin-left: auto;
+  display: block;
+}
+
 .language-switcher {
   display: inline-flex;
   align-items: center;

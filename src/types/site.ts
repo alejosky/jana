@@ -19,6 +19,7 @@ export type SiteSocialItem = {
 export type SiteLanguageContent = {
   meta: SiteMeta;
   menuButton: string;
+  menuCloseButton: string;
   languageSwitcherLabel: string;
   title: string;
   introText: string;
