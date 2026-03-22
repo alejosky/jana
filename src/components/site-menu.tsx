@@ -113,7 +113,6 @@ export function SiteMenu({ locale, siteData }: SiteMenuProps) {
             className="menu-close"
             type="button"
             aria-label={languageData.menuCloseButton}
-            onClick={() => setMenuOpen(false)}
           >
             <span className="">✕</span>
           </button>

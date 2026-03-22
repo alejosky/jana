@@ -493,6 +493,10 @@ body.menu-open {
     display: none;
   }
 
+  .menu-close {
+    display: none;
+  }
+
   .site-menu {
     padding: 0 0 12px;
   }
